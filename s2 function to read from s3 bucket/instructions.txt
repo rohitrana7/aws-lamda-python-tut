@@ -1,0 +1,16 @@
+after creation of lambda function, goto IAM service
+create role
+    lambda-s3-role
+attach policy
+    AmazonS3FullAccess
+add tag(optional)
+    key: lambda-s3, value: test
+
+goto lambda function -> Configuration tab -> Permissions -> Execution role -> Edit -> choose role 
+[didn't work on the role I created recently 'lambda-s3-role']
+
+but worked for already available role - 'list-s3-buckets-role-turzh4ey'
+attach policy
+    AmazonS3FullAccess
+add tag(optional)
+    key: lambda-s3, value: test

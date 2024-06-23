@@ -1,0 +1,8 @@
+goto IAM -> ROLES
+    select putItemFromDynamoDB-role-tifmfc83
+    Add permissions
+        Attach policies
+            'AmazonDynamoDBFullAccess'
+
+goto DynamoDB service (Managed NoSQL Database)
+    check if record got added or not

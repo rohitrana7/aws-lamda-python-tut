@@ -1,0 +1,10 @@
+goto DynamoDB service (Managed NoSQL Database)
+    create table named 'planets'
+    create item
+    add item
+
+goto IAM -> ROLES
+    select getItemFromDynamoDB-role-tifmfc83
+    Add permissions
+        Attach policies
+            'AmazonDynamoDBFullAccess'
